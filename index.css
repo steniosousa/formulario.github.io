@@ -1,0 +1,22 @@
+body{
+    background-color: azure;
+}
+h1{
+    text-align: center;
+}
+form{
+    background-color: rgba(0, 255, 255, 0.452);
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 100px 40px;
+}
+input{
+    margin: 5px 10px;
+    width: 300px;
+}
+p{
+    display: none;
+}
