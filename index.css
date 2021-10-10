@@ -1,9 +1,6 @@
 body{
     background-color: azure;
 }
-h1{
-    text-align: center;
-}
 form{
     background-color: rgba(0, 255, 255, 0.452);
     position: absolute;
@@ -12,11 +9,41 @@ form{
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 100px 40px;
+    border-radius: 30px;
+    box-shadow: 10px 20px 60px  teal;
+    font-family: 'Montserrat', sans-serif;
 }
-input{
-    margin: 5px 10px;
+form input[type=email],
+form input[type=tel],
+form input[type=text],
+form input[type=password]{
+    padding: 10px 50px;
+    margin: 10px 0;
     width: 300px;
+    border: 1px solid rgb(2, 105, 88);
+    height: 20px;
+    font-family: 'Montserrat', sans-serif;
+    outline: 0;
+    border-radius: 5px;
+    font-weight: bold;
 }
-p{
-    display: none;
+form input[type=email]:active,
+form input[type=tel]:active,
+form input[type=text]:active,
+form input[type=password]:active {
+    background-color: rgb(231, 231, 227);
+}
+form input[type=submit]{
+    margin-top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.425);
+    color: black;
+    height:30px;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 20px;
+    outline: 0;
+    transition: 1s;
+}
+form input[type=submit]:hover{
+    background-color: rgb(165, 165, 252);
 }
