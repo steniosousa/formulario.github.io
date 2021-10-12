@@ -1,8 +1,16 @@
 const enviar = document.querySelector("#enviar");
-enviar.addEventListener("click", function(stop) {
-    stop.preventDefault();
+enviar.addEventListener("click", function(e) {
+    e.preventDefault();
     const name = document.querySelector("#name");
-    const value = name.value;
-    const concatenacao =  "Seja bem vindo, "+ value + "!";
-    document.getElementById('saudacao').innerHTML = concatenacao;
+    if(name.value === ""){
+        const error = "Por favor, preencha seu nome.";
+        document.getElementById('estatos').innerHTML = error;
+      } else {
+        const NameValue = document.querySelector('#name').value;
+        document.getElementById('estatos').innerHTML = "Seja bem vindo, " + NameValue + "!" ;
+    }
+    const clean = document.querySelector('#name').value = "";
 })
+
+
+
