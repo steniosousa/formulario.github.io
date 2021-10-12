@@ -5,20 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="index.js" defer></script>
     <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <form>
+    
     <h2>Contate-nos</h2>
-    <input  type="text"  placeholder="Seu nome">
-    <input  type="tel" placeholder="Seu telefone"  >
-    <input  type="email"  placeholder="Seu E-mail">
-    <input  type="password" placeholder="Sua senha." >
-    <input  type="submit" value="Confirmar">
+    <div>
+        <i class="fa fa-user icon"></i>
+        <input  type="text" id="name"  placeholder="Seu nome">
+    </div>
+    <div>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <input  type="tel" placeholder="Seu telefone"  >
+    </div>
+    <div>
+        <i class="fa fa-envelope icon"></i>
+        <input  type="email"  placeholder="Seu E-mail">
+    </div>
+    <div>
+        <i class="fa fa-key icon"></i>
+        <input  type="password" placeholder="Sua senha." >
+    </div>
+    <input  type="submit" id="enviar" value="Confirmar">
+    <p id="saudacao"></p>
 </form>
 </body>
 </html>
